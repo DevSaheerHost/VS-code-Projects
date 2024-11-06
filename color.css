@@ -1,0 +1,47 @@
+/* v 1.0 */
+:root {
+  --black: #000;
+  --white: #fff;
+  --dim: #b3b3b3;
+  --card-black: #131313;
+  --card-white: #eeeeee;
+  --special-text: #09a0ff;
+  --placeholder: gray;
+  --border-dim: rgb(202, 202, 202);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Your dark theme styles go here */
+  body {
+    --bg: var(--black);
+    --text: var(--white);
+    --card-bg: var(--card-black);
+    --border-dim: rgb(65, 65, 65);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Your dark theme styles go here */
+  body {
+    --bg: var(--white);
+    --text: var(--black);
+    --card-bg: var(--card-white);
+    --dim: #5f5f5f;
+    --border-dim: rgb(202, 202, 202);
+  }
+}
+
+body.dark-theme {
+  --bg: var(--black);
+  --text: var(--white);
+  --card-bg: var(--card-black);
+  --border-dim: rgb(65, 65, 65);
+}
+
+body.light-theme {
+  --bg: var(--white);
+  --text: var(--black);
+  --card-bg: var(--card-white);
+  --dim: #5e5e5e;
+  --border-dim: rgb(202, 202, 202);
+}
